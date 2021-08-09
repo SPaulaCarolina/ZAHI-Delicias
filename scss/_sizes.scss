@@ -1,0 +1,32 @@
+$bg-cover: cover;
+$w-50: 50%;
+$w-75: 75%;
+$w-100: 97%;
+$w-90: 90%;
+$h-100: 100%;
+$h-104: 104%;
+$w-102: 102%;
+
+
+#logo {
+	@media only screen and (min-width:320px) and (max-width:767px) {
+		width:$w-75;
+	}
+}
+#navMobile {
+	width:$w-100;
+	button {
+		width:$w-100;
+	}
+}
+.bg-image {
+	background-size:$bg-cover;}	
+
+.sectionLogo {
+	@media only screen and (min-width:320px) and (max-width:767px) {
+		width:$w-100;
+	}
+}
+.columna {
+	width:$w-90;
+}

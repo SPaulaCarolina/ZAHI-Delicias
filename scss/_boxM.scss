@@ -1,0 +1,30 @@
+$m-1: 1px;
+$m-2: 2px;
+$m-10: 10px;
+$p-10: 10px;
+$m-25: 25px;
+$p-50: 50px;
+$p-20: 20px;
+$p-5: 5px;
+
+.icon {
+	margin:$m-2;
+}
+.paddingTB {
+	padding-top:$p-10;
+	padding-bottom:$p-50;
+}
+.paddingSectionTB {
+	padding-top:$p-20;
+	padding-bottom:$p-20;
+}
+.marginLR {
+	margin-left:$m-25; 
+	margin-right:$m-25;
+}
+.paddingForm {
+	padding-top:$p-5; 
+	padding-bottom:$p-5;}
+#whatsapp {
+	margin:$m-2;
+}

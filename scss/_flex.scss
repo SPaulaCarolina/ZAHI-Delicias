@@ -1,0 +1,40 @@
+$d-flex: flex;
+$row-no-w: row nowrap;
+$column-no-w: column nowrap;
+$col-reverse: column-reverse;
+$jc-around: space-around;
+$jc-between: space-between;
+$f-start: flex-start;
+$jc-end: flex-end;
+$align-center: center;
+
+.navBar {
+	display:$d-flex;
+	flex-flow:$row-no-w;
+	align-items:$align-center;
+	@media only screen and (min-width:320px) and (max-width:767px) {
+		justify-content:$align-center;
+	}
+}
+.firstSection {
+	display:$d-flex;
+	flex-flow:$row-no-w;
+	align-items:$align-center;
+	justify-content:$jc-around;
+}
+.tienda {
+	@media only screen and (min-width:320px) and (max-width:767px) {
+		flex-flow:$column-no-w;
+	}
+}
+.form {
+	display:$d-flex;
+	align-items:$f-start;
+	justify-content:$jc-around;
+	@media only screen and (min-width:320px) and (max-width:767px) {
+		flex-flow:$column-no-w
+	}
+	@media only screen and (min-width:768px) {
+		flex-flow:$row-no-w;
+	}
+}

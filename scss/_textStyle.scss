@@ -1,0 +1,76 @@
+$cursive:'Staatliches', cursive;
+$iconM: 2rem;
+$iconL: 6rem;
+$normal: 62,5%;
+$titleL: 3.5rem;
+$titleM: 2rem;
+$titleS: 1.8rem;
+$textL: 1.6rem;
+$textM: 1.4rem;
+$textS: 1.2rem;
+$textXS: 1rem;
+$no-deco: none;
+$expand: 200%;
+
+html {
+	font-size:$normal; 
+	font-family:$cursive;}
+
+
+.icon {
+	font-size:$iconM;
+}
+.encabezadoA {
+	@media only screen and (min-width: 320px) and (max-width: 767px) {
+		font-size:$textS;
+	}
+	@media only screen and (min-width: 768px) {
+		font-size:$titleL;
+	}
+}
+.encabezadoB {
+	@media only screen and (min-width: 320px) and (max-width: 767px) {
+		font-size:$textXS;
+	}
+	@media only screen and (min-width: 768px) {
+		font-size:$titleM;
+	}
+}
+.comunidad h1 {
+	font-size:$titleS;
+	}
+.comunidad h3 {
+	@media only screen and (min-width: 320px) and (max-width: 767px) {
+		font-size:$textXS;
+	}
+	@media only screen and (min-width: 768px) {
+		font-size:$titleS;
+	}
+}
+.sectionTitle {
+	font-size:$titleM;
+	}
+.parrafo {
+	font-size:$textM;
+	}
+.contacto h1 {
+	font-size:$titleS;
+	}
+.contacto h3 {
+	font-size:$textM;
+	}
+.contacto h5 {
+	font-size:$textXS;
+}
+.link {
+	text-decoration:$no-deco;
+	transition: all 2;
+	&:hover {
+		font-size:$expand;
+	}
+}
+.description {
+		font-size:$textXS;
+	}
+.footer {
+	font-size:$textS;}

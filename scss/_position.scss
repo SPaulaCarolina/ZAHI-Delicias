@@ -1,0 +1,56 @@
+$p-relative: relative;
+$center: center;
+$der: right;
+$izq: left;
+$fix: fixed;
+$m-20: 20px;
+$m-50: 50px;
+$z-0: 0;
+$z-1: 1;
+
+.iconsContainer {
+	text-align:$der;
+}
+#logo {
+	position:$p-relative;
+	@media only screen and (min-width:320px) and (max-width:767px) {
+		left:$m-50;
+	}
+	@media only screen and (min-width: 768px) {
+		z-index:$z-1;
+	}
+}
+#carousel {
+	@media only screen and (min-width: 768px) {
+		position:$p-relative;
+		bottom:$m-50;
+		z-index:$z-0;
+	}
+}
+#portada {
+	@media only screen and (min-width: 768px) {
+		position:$p-relative;
+		bottom:$m-50;
+		z-index:$z-0;
+	}
+}
+.cards {
+	@media only screen and (min-width:320px) and (max-width:767px) {
+		position:$p-relative;
+		left:$m-20;
+	}
+}
+.bg-image {
+	background-position:$center;
+}
+#whatsapp {
+	@media only screen and (min-width:320px) and (max-width:1023px) {
+		position:$fix;
+		bottom:$m-20;
+		right:$m-20;
+	}
+}
+.logIn {
+	position:$p-relative;
+	left:$m-50;
+}

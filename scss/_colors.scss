@@ -1,0 +1,57 @@
+$negro: #0d0b0b;
+$oscuro: #121210;
+$darkGrey: #261b0f;
+$blanco: white;
+$bg-light: #edcd8c;
+$beige: lightgoldenrodyellow;
+$verde: #15d445;
+$color: #91061d;
+$o-100:0.99;
+$o-75: 0.75;
+$o-25: 0.25;
+
+
+body {
+	background-color:$negro;
+	color:$blanco;
+}
+
+.icon {
+	color:$blanco;
+}
+.encabezadoA {
+		color:$negro;
+		background-color:$beige;
+		opacity:$o-75;
+	}
+	.encabezadoB {
+		color:$negro;
+		background-color:$beige;
+		opacity:$o-75;
+	}
+.firstSection {
+	@media only screen and (min-width:320px) and (max-width:767px) {
+		background-color:$oscuro;
+	}
+}
+.card {
+	color:$negro;
+	background-color:$beige;
+}
+.bg-text {
+	color:$blanco;
+	opacity:$o-25;
+	transition: all 2s;
+	&:hover {
+		opacity:$o-100;
+	}
+}
+.bg-card {
+	background-color:$oscuro;
+}
+.link {
+	transition: all 2;
+	&:hover {
+		color:$color;
+	}
+}

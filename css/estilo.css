@@ -1,0 +1,232 @@
+body {
+  background-color: #0d0b0b;
+  color: white; }
+
+.icon {
+  color: white; }
+
+.encabezadoA {
+  color: #0d0b0b;
+  background-color: lightgoldenrodyellow;
+  opacity: 0.75; }
+
+.encabezadoB {
+  color: #0d0b0b;
+  background-color: lightgoldenrodyellow;
+  opacity: 0.75; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .firstSection {
+    background-color: #121210; } }
+
+.card {
+  color: #0d0b0b;
+  background-color: lightgoldenrodyellow; }
+
+.bg-text {
+  color: white;
+  opacity: 0.25;
+  transition: all 2s; }
+  .bg-text:hover {
+    opacity: 0.99; }
+
+.bg-card {
+  background-color: #121210; }
+
+.link {
+  transition: all 2; }
+  .link:hover {
+    color: #91061d; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  #logo {
+    width: 75%; } }
+
+#navMobile {
+  width: 97%; }
+  #navMobile button {
+    width: 97%; }
+
+.bg-image {
+  background-size: cover; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .sectionLogo {
+    width: 97%; } }
+
+.columna {
+  width: 90%; }
+
+.navBar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .navBar {
+      justify-content: center; } }
+
+.firstSection {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .tienda {
+    flex-flow: column nowrap; } }
+
+.form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .form {
+      flex-flow: column nowrap; } }
+  @media only screen and (min-width: 768px) {
+    .form {
+      flex-flow: row nowrap; } }
+
+.icon {
+  margin: 2px; }
+
+.paddingTB {
+  padding-top: 10px;
+  padding-bottom: 50px; }
+
+.paddingSectionTB {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.marginLR {
+  margin-left: 25px;
+  margin-right: 25px; }
+
+.paddingForm {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+#whatsapp {
+  margin: 2px; }
+
+html {
+  font-size: 62, 5%;
+  font-family: "Staatliches", cursive; }
+
+.icon {
+  font-size: 2rem; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .encabezadoA {
+    font-size: 1.2rem; } }
+
+@media only screen and (min-width: 768px) {
+  .encabezadoA {
+    font-size: 3.5rem; } }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .encabezadoB {
+    font-size: 1rem; } }
+
+@media only screen and (min-width: 768px) {
+  .encabezadoB {
+    font-size: 2rem; } }
+
+.comunidad h1 {
+  font-size: 1.8rem; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .comunidad h3 {
+    font-size: 1rem; } }
+
+@media only screen and (min-width: 768px) {
+  .comunidad h3 {
+    font-size: 1.8rem; } }
+
+.sectionTitle {
+  font-size: 2rem; }
+
+.parrafo {
+  font-size: 1.4rem; }
+
+.contacto h1 {
+  font-size: 1.8rem; }
+
+.contacto h3 {
+  font-size: 1.4rem; }
+
+.contacto h5 {
+  font-size: 1rem; }
+
+.link {
+  text-decoration: none;
+  transition: all 2; }
+  .link:hover {
+    font-size: 200%; }
+
+.description {
+  font-size: 1rem; }
+
+.footer {
+  font-size: 1.2rem; }
+
+.iconsContainer {
+  text-align: right; }
+
+#logo {
+  position: relative; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    #logo {
+      left: 50px; } }
+  @media only screen and (min-width: 768px) {
+    #logo {
+      z-index: 1; } }
+
+@media only screen and (min-width: 768px) {
+  #carousel {
+    position: relative;
+    bottom: 50px;
+    z-index: 0; } }
+
+@media only screen and (min-width: 768px) {
+  #portada {
+    position: relative;
+    bottom: 50px;
+    z-index: 0; } }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .cards {
+    position: relative;
+    left: 20px; } }
+
+.bg-image {
+  background-position: center; }
+
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+  #whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; } }
+
+.logIn {
+  position: relative;
+  left: 50px; }
+
+@media only screen and (min-width: 1024px) {
+  #navMobile {
+    display: none; } }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  #navDesktop {
+    display: none; } }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .carousel-caption {
+    display: none; } }
+
+@media only screen and (min-width: 1024px) {
+  #whatsapp {
+    display: none; } }
+
+.bg-image {
+  background-image: url(../assets/images/integral.jpg);
+  background-repeat: no-repeat; }

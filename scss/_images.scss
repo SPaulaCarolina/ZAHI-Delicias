@@ -1,0 +1,7 @@
+$bg-im-integral: url(../assets/images/integral.jpg);
+$bg-no-repeat: no-repeat;
+
+.bg-image {
+	background-image:$bg-im-integral;
+	background-repeat:$bg-no-repeat;
+	}
