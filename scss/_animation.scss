@@ -1,0 +1,23 @@
+$animation-promo: promoAnimada;
+$animation-list: interactiveList;
+$inf: infinite;
+$ease: ease-in;
+$anim-6s: 6s;
+$no-delay: 0s;
+
+.publicidad {
+   animation-name:$animation-promo;
+   animation-iteration-count:$inf;
+   animation-timing-function:$ease;
+   animation-duration:$anim-6s;
+   animation-delay:$no-delay;
+}
+.animText {
+   ul {
+      animation-name:$animation-list;
+      animation-iteration-count:$inf;
+      animation-timing-function:$ease;
+      animation-duration:$anim-6s;
+      animation-delay:$no-delay;
+   }
+}

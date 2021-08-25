@@ -1,30 +1,25 @@
 body {
-  background-color: #0d0b0b;
-  color: white; }
+  background-color: #121210; }
 
 .icon {
-  color: white; }
+  color: ghostwhite; }
 
-.encabezadoA {
-  color: #0d0b0b;
-  background-color: lightgoldenrodyellow;
-  opacity: 0.75; }
+.encabezadoA, .encabezadoB, .card-title {
+  color: ghostwhite;
+  text-shadow: 2px 2px #121210; }
 
-.encabezadoB {
-  color: #0d0b0b;
-  background-color: lightgoldenrodyellow;
-  opacity: 0.75; }
+.bg-image h1, .bg-image h3 {
+  text-shadow: 2px 2px #121210; }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .firstSection {
-    background-color: #121210; } }
+.bg-image p {
+  text-shadow: 1px 1px #121210; }
 
 .card {
   color: #0d0b0b;
-  background-color: lightgoldenrodyellow; }
+  background-color: #faf9f0; }
 
 .bg-text {
-  color: white;
+  color: ghostwhite;
   opacity: 0.25;
   transition: all 2s; }
   .bg-text:hover {
@@ -33,10 +28,18 @@ body {
 .bg-card {
   background-color: #121210; }
 
-.link {
-  transition: all 2; }
-  .link:hover {
-    color: #91061d; }
+@keyframes promoAnimada {
+  0% {
+    background-color: #0d0b0b; }
+  10% {
+    background-color: #0d0b0b; } }
+
+.animText {
+  color: ghostwhite;
+  text-shadow: 2px 2px #121210; }
+
+body, .fullPrint {
+  width: 100%; }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   #logo {
@@ -56,6 +59,18 @@ body {
 
 .columna {
   width: 90%; }
+
+.publicidad {
+  height: 40%;
+  background-size: cover; }
+
+.animText {
+  width: 90%;
+  height: 40px;
+  line-height: 40px; }
+
+body {
+  justify-content: center; }
 
 .navBar {
   display: flex;
@@ -86,6 +101,15 @@ body {
     .form {
       flex-flow: row nowrap; } }
 
+.animText {
+  display: flex; }
+
+.baseline {
+  align-items: baseline; }
+
+.alignCenter {
+  align-items: center; }
+
 .icon {
   margin: 2px; }
 
@@ -108,12 +132,48 @@ body {
 #whatsapp {
   margin: 2px; }
 
+.animText {
+  margin: auto; }
+  .animText ul {
+    padding-left: 10px; }
+  .animText p, .animText ul {
+    margin: 0px; }
+
+@keyframes interactiveList {
+  0% {
+    margin: 0px; }
+  40% {
+    margin: 0px; }
+  50% {
+    margin-top: -40px; }
+  65% {
+    margin-top: -40px; }
+  75% {
+    margin-top: -80px; }
+  100% {
+    margin-top: -80px; } }
+
+.containerText {
+  padding: 250px 50px 250px 50px; }
+
+.noMargin {
+  margin: 0px; }
+
+.encabezadoA, .encabezadoB {
+  margin-bottom: 10px; }
+
+.Style2 {
+  margin-top: 100px; }
+
 html {
   font-size: 62, 5%;
   font-family: "Staatliches", cursive; }
 
 .icon {
   font-size: 2rem; }
+
+.iconS {
+  font-size: 1.2rem; }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .encabezadoA {
@@ -142,11 +202,17 @@ html {
   .comunidad h3 {
     font-size: 1.8rem; } }
 
+.text {
+  font-size: 0.8rem; }
+
 .sectionTitle {
-  font-size: 2rem; }
+  font-size: 1.8rem; }
+
+.sectionSubtitle {
+  font-size: 1.6rem; }
 
 .parrafo {
-  font-size: 1.4rem; }
+  font-size: 1rem; }
 
 .contacto h1 {
   font-size: 1.8rem; }
@@ -169,6 +235,18 @@ html {
 .footer {
   font-size: 1.2rem; }
 
+.publicidad {
+  font-weight: bold; }
+
+.animText {
+  font-size: 1.6rem; }
+  .animText ul {
+    list-style-type: none; }
+
+.Style2 {
+  font-family: "Allura", cursive;
+  font-size: 3.5rem; }
+
 .iconsContainer {
   text-align: right; }
 
@@ -179,18 +257,25 @@ html {
       left: 50px; } }
   @media only screen and (min-width: 768px) {
     #logo {
-      z-index: 1; } }
+      z-index: 2; } }
+
+#navDesktop {
+  z-index: 1; }
 
 @media only screen and (min-width: 768px) {
   #carousel {
     position: relative;
-    bottom: 50px;
+    bottom: 75px;
     z-index: 0; } }
+
+.sectionLogo {
+  position: relative;
+  left: 250px; }
 
 @media only screen and (min-width: 768px) {
   #portada {
     position: relative;
-    bottom: 50px;
+    bottom: 75px;
     z-index: 0; } }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -198,7 +283,7 @@ html {
     position: relative;
     left: 20px; } }
 
-.bg-image {
+.bg-image, body {
   background-position: center; }
 
 @media only screen and (min-width: 320px) and (max-width: 1023px) {
@@ -210,6 +295,27 @@ html {
 .logIn {
   position: relative;
   left: 50px; }
+
+.publicidad {
+  background-position: center;
+  text-align: center; }
+
+.animText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden; }
+
+.sectionTitle, .parrafo, .sectionSubtitle {
+  text-align: center; }
+
+.z-1 {
+  z-index: 1; }
+
+.Style2 {
+  text-align: center; }
 
 @media only screen and (min-width: 1024px) {
   #navMobile {
@@ -230,3 +336,34 @@ html {
 .bg-image {
   background-image: url(../assets/images/integral.jpg);
   background-repeat: no-repeat; }
+
+.publicidad {
+  background-repeat: no-repeat; }
+
+@keyframes promoAnimada {
+  25% {
+    background-image: url(../assets/images/budinCacao.jpg); }
+  40% {
+    background-image: url(../assets/images/budinCacao.jpg); }
+  50% {
+    background-image: url(../assets/images/budinBananas.jpg); }
+  65% {
+    background-image: url(../assets/images/budinBananas.jpg); }
+  75% {
+    background-image: url(../assets/images/marmolado.jpg); }
+  90% {
+    background-image: url(../assets/images/marmolado.jpg); } }
+
+.publicidad {
+  animation-name: promoAnimada;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 6s;
+  animation-delay: 0s; }
+
+.animText ul {
+  animation-name: interactiveList;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 6s;
+  animation-delay: 0s; }

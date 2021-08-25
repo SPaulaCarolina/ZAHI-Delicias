@@ -1,11 +1,18 @@
+$none: 0px;
 $m-1: 1px;
 $m-2: 2px;
 $m-10: 10px;
 $p-10: 10px;
 $m-25: 25px;
 $p-50: 50px;
+$p-100: 100px;
 $p-20: 20px;
 $p-5: 5px;
+$auto: auto;
+$neg-40: -40px;
+$neg-80: -80px;
+$neg-120: -120px;
+$p-public: 250px 50px 250px 50px;
 
 .icon {
 	margin:$m-2;
@@ -28,3 +35,32 @@ $p-5: 5px;
 #whatsapp {
 	margin:$m-2;
 }
+.animText {
+	margin:$auto;
+	ul {
+		padding-left:$p-10;
+	}
+	p,ul {
+	margin:$none;
+	}
+}
+@keyframes interactiveList {
+	0% {margin:$none;}
+	40% {margin:$none;}
+	50% {margin-top:$neg-40}
+	65% {margin-top:$neg-40}
+	75% {margin-top:$neg-80}
+	100% {margin-top:$neg-80}
+}
+.containerText {
+	padding:$p-public;
+}
+.noMargin {
+	margin:$none;
+}
+.encabezadoA,.encabezadoB {
+	margin-bottom:$m-10;
+}
+ .Style2 {
+ 	margin-top:$p-100;
+ }

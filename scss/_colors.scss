@@ -1,42 +1,40 @@
 $negro: #0d0b0b;
 $oscuro: #121210;
 $darkGrey: #261b0f;
-$blanco: white;
-$bg-light: #edcd8c;
+$blanco: ghostwhite;
+$bg-light: #faf9f0;
 $beige: lightgoldenrodyellow;
 $verde: #15d445;
 $color: #91061d;
 $o-100:0.99;
 $o-75: 0.75;
 $o-25: 0.25;
-
+$o-0: 0;
+$marron: #c9c997;
+$shadow: 2px 2px #121210;
+$shadow-s: 1px 1px #121210;
 
 body {
-	background-color:$negro;
-	color:$blanco;
+	background-color:$oscuro;
 }
-
 .icon {
 	color:$blanco;
 }
-.encabezadoA {
-		color:$negro;
-		background-color:$beige;
-		opacity:$o-75;
+.encabezadoA,.encabezadoB,.card-title {
+	color:$blanco;
+	text-shadow:$shadow;
+}
+.bg-image {
+	h1,h3 {
+		text-shadow:$shadow;
 	}
-	.encabezadoB {
-		color:$negro;
-		background-color:$beige;
-		opacity:$o-75;
-	}
-.firstSection {
-	@media only screen and (min-width:320px) and (max-width:767px) {
-		background-color:$oscuro;
+	p {
+		text-shadow:$shadow-s;
 	}
 }
 .card {
 	color:$negro;
-	background-color:$beige;
+	background-color:$bg-light;
 }
 .bg-text {
 	color:$blanco;
@@ -49,9 +47,13 @@ body {
 .bg-card {
 	background-color:$oscuro;
 }
-.link {
-	transition: all 2;
-	&:hover {
-		color:$color;
-	}
+@keyframes promoAnimada {
+	0% {background-color:$negro;}
+	10% {background-color:$negro;}
 }
+.animText {
+	color:$blanco;
+	text-shadow:$shadow;
+}
+
+

@@ -1,7 +1,12 @@
-$cursive:'Staatliches', cursive;
+$no-style: none;
+$bold: bold;
+$Style1:'Staatliches', cursive;
+$Style2: 'Allura', cursive;
 $iconM: 2rem;
 $iconL: 6rem;
 $normal: 62,5%;
+$titleXXL: 12rem;
+$titleXL: 8rem;
 $titleL: 3.5rem;
 $titleM: 2rem;
 $titleS: 1.8rem;
@@ -9,16 +14,20 @@ $textL: 1.6rem;
 $textM: 1.4rem;
 $textS: 1.2rem;
 $textXS: 1rem;
+$textXXS: 0.8rem;
 $no-deco: none;
 $expand: 200%;
 
 html {
 	font-size:$normal; 
-	font-family:$cursive;}
+	font-family:$Style1;}
 
 
 .icon {
 	font-size:$iconM;
+}
+.iconS {
+	font-size:$textS;
 }
 .encabezadoA {
 	@media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -47,11 +56,17 @@ html {
 		font-size:$titleS;
 	}
 }
+.text {
+	font-size:$textXXS;
+}
 .sectionTitle {
-	font-size:$titleM;
+	font-size:$titleS;
+	}
+.sectionSubtitle {
+	font-size:$textL;
 	}
 .parrafo {
-	font-size:$textM;
+	font-size:$textXS;
 	}
 .contacto h1 {
 	font-size:$titleS;
@@ -74,3 +89,18 @@ html {
 	}
 .footer {
 	font-size:$textS;}
+.publicidad {
+	font-weight:$bold;
+}
+.animText {
+	font-size:$textL;
+	ul {
+		list-style-type:$no-style;
+	}
+}
+.Style2 {
+	font-family:$Style2;
+	font-size:$titleL;
+}
+
+
