@@ -15,12 +15,19 @@ $shadow: 2px 2px #121210;
 $shadow-s: 1px 1px #121210;
 
 body {
+	color:$blanco;
 	background-color:$oscuro;
 }
 .icon {
 	color:$blanco;
 }
-.encabezadoA,.encabezadoB,.card-title {
+#navDesktop {
+	ul {
+		color:$negro;
+		background-color:$bg-light;
+	}
+}
+.text-wh {
 	color:$blanco;
 	text-shadow:$shadow;
 }

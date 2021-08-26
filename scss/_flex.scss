@@ -6,25 +6,36 @@ $jc-around: space-around;
 $jc-between: space-between;
 $f-start: flex-start;
 $jc-end: flex-end;
-$align-center: center;
+$center: center;
 $align-base: baseline;
 
 body {
-	justify-content:$align-center;
+	justify-content:$center;
 }
-.navBar {
+.nav-bar {
 	display:$d-flex;
 	flex-flow:$row-no-w;
-	align-items:$align-center;
+	align-items:$center;
 	@media only screen and (min-width:320px) and (max-width:767px) {
-		justify-content:$align-center;
+		justify-content:$center;
 	}
 }
-.firstSection {
+#navDesktop {
+	ul {
+		justify-content:$center;
+	}
+}
+.title-container {
 	display:$d-flex;
-	flex-flow:$row-no-w;
-	align-items:$align-center;
-	justify-content:$jc-around;
+	flex-flow:$column-no-w;
+	justify-content: $center;
+	align-items:$center;
+}
+.card-title-container {
+	display:$d-flex;
+	flex-flow:$column-no-w;
+	justify-content: $center;
+	align-items:$center;
 }
 .tienda {
 	@media only screen and (min-width:320px) and (max-width:767px) {
@@ -48,6 +59,48 @@ body {
 .baseline {
 	align-items:$align-base;
 }
-.alignCenter {
-	align-items:$align-center;
+.align-center {
+	align-items:$center;
+}
+.acerca-de {
+	display:$d-flex;
+	justify-content: $center;
+	align-items:$center;
+	@media only screen and (min-width:320px) and (max-width:767px) {
+		flex-flow:$column-no-w;
+	}
+	@media only screen and (min-width:768px) {
+		flex-flow:$row-no-w;
+	}
+}
+.section {
+	display:$d-flex;
+	flex-flow:$column-no-w;
+	justify-content: $center;
+	align-items:$center;
+}
+.footer {
+	display:$d-flex;
+	justify-content: $center;
+	align-items:$center;
+	@media only screen and (min-width:320px) and (max-width:767px) {
+		flex-flow:$column-no-w;
+	}
+	@media only screen and (min-width:768px) {
+		flex-flow:$row-no-w;
+	}
+}
+.submit {
+	justify-content: $f-start;
+}
+.f-start {
+	display:$d-flex;
+	@media only screen and (min-width:320px) and (max-width:767px) {
+		flex-flow:$column-no-w;
+		justify-content: $center;
+	}
+	@media only screen and (min-width:768px) {
+		flex-flow:$row-no-w;
+		justify-content: $f-start;
+	}
 }

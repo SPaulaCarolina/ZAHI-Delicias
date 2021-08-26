@@ -5,7 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
 	<title>zahi+Serra</title> 
 	<!-- Google fonts -->
+	<link rel = "preconnect" href = "https://fonts.googleapis.com">
+	<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 	<!-- Icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 	<!-- Bootstrap CSS -->
@@ -15,24 +18,21 @@
 	<!-- Mi CSS -->
 	<link rel="stylesheet" type="text/css" href="..\css\estilo.css">
 </head>
-<body class="p-3 justify-content-center">
+<body>
 	<div class="container-fluid">
 		<header class="row">
-			<div class="col-xs-12 col-lg-12 m-2 iconsContainer">
+			<div class="col-xs-12 col-lg-12 iconsContainer">
 				<i class="fab fa-instagram icon"></i>
 				<i class="fab fa-youtube icon"></i>
 				<i class="fab fa-facebook-f icon"></i>
 			</div>
 		</header>
-		<div class="row navBar">
+		<div class="row nav-bar">
 			<div class="col-lg-2 col-xs-12">
-				<img src="..\assets\images\logo.png" alt="logo" id="logo" width="110%" data-aos="flip-left">
+				<a href="..\index.html"><img src="..\assets\images\logo.png" alt="logo" id="logo" width="110%" data-aos="flip-left"></a>
 			</div>
 			<div id="navDesktop" class="col-md-10">
-				<ul class="nav justify-content-center bg-light text-dark">
-					<li class="nav-item">
-					    <a class="nav-link active text-reset" href="..\index.html"><i class="fas fa-home"></i></a>
-					</li>
+				<ul class="nav">
 					<li class="nav-item">
 					    <a class="nav-link active text-reset" href="Nosotros.html">NOSOTROS</a>
 					</li>
@@ -52,7 +52,6 @@
 			<div id="navMobile" class= "col-xs-12 dropdown">
 				<button class="btn btn-light dropdown-toggle mt-2 mb-2 ml-3 mr-3" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MENU</button>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-				  <button class="dropdown-item" type="button"><a class="nav-link active text-reset" href="..\index.html"><i class="fas fa-home"></i></a></button>
 			      <button class="dropdown-item" type="button"><a class="nav-link active text-reset" href="Nosotros.html">NOSOTROS</a></button>
 				  <button class="dropdown-item" type="button"><a class="nav-link text-reset" href="Productos.html">PRODUCTOS</a></button>
 				  <button class="dropdown-item" type="button"><a class="nav-link text-reset" href="Tienda.html">TIENDA</a></button>
@@ -64,9 +63,8 @@
 			<div class="col-lg-12 col-xs-12">
 				<div class="card">
 				  <img src="..\assets\images\portada-baguettes.jpg" class="card-img" alt="baguettes">
-				  <div class="card-img-overlay d-flex flex-column justify-content-end align-items-start">
-				    <h1 class="card-title encabezadoA p-1">ZAHI DELICIAS 100% INTEGRALES & ARTESANALES</h1>
-				    <h2 class="card-text encabezadoB align-text-bottom p-1">TIENDA</h2>
+				  <div class="card-img-overlay title-container">
+				    <h1 class="title-view text-wh">TIENDA</h1>
 				  </div>
 				</div>
 			</div>
@@ -345,7 +343,7 @@
 			<div class="col-lg-4 col-xs-2">
 				<div class="col-12 publicidad p-2 mr-1 mt-3 ml-3 mb-5 columna">
 					<div class="containerText" data-aos="zoom-in">
-						<div class="animText"> 
+						<div class="animText text-wh"> 
 							<p>BUDINES</p>
 							<ul>
 								<li>INTEGRALES</li>
@@ -357,12 +355,12 @@
 				</div>
 				<div class="bg-image row d-flex justify-content-center mt-5 mb-5 ml-3 columna">
 					<div class="col-12 comunidad">
-						<h1 class="card-title mt-5 mb-5 text-center">¡SUMATE A NUESTRA COMUNIDAD Y OBTENÉ GRANDES BENEFICIOS!</h1>
+						<h1 class="card-title mt-5 mb-5 text-center text-wh">¡SUMATE A NUESTRA COMUNIDAD Y OBTENÉ GRANDES BENEFICIOS!</h1>
 						<div id="seccionComunidad" class="d-flex flex-column justify-content-center"> 
 							<div class="col-md-12 text-center m-3">
-								<h3 class="card-text">DESCUENTOS</h3>
-								<h3 class="card-text">RECETAS EXCLUSIVAS</h3>
-								<h3 class="card-text">¡Y MUCHO MÁS!</h3>
+								<h3 class="card-text text-wh">DESCUENTOS</h3>
+								<h3 class="card-text text-wh">RECETAS EXCLUSIVAS</h3>
+								<h3 class="card-text text-wh">¡Y MUCHO MÁS!</h3>
 							</div>
 							<div class="col-md-12 text-center m-3">
 								<form action="#" class="input-group input-group-sm mb-3">
@@ -373,7 +371,7 @@
 						   				<input type="email" class="form-control input" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
 							 		</div>
 									<div class="form-group col-md-12">
-							  			<button type="button" class="btn btn-light">ENVIAR</button>
+							  			<button type="button" class="btn btn-light text-wh">ENVIAR</button>
 							 		</div>
 								</form>
 							</div>
@@ -382,9 +380,9 @@
 				</div>
 			</div>
 		</div>	
-		<!-- inicio footer -->
-		<div class="row d-flex flex-row justify-content-around baseline ml-3 pr-2">
-			<div class="col-lg-4 col-xs-12 d-flex flex-row text-center alignCenter">
+		<!-- INICIO FOOTER -->
+		<div class="row footer ml-2">
+			<div class="col-lg-4 col-xs-12 d-flex flex-row">
 				<p>Seguinos en:</p>
 				<div class="text-center ml-3">
 					<i class="fab fa-instagram icon mr-2"></i>
@@ -392,21 +390,21 @@
 					<i class="fab fa-facebook-f ml-2 icon"></i>
 				</div>
 			</div>
-			<div class="col-lg-8 col-xs-12 d-flex flex-row paddingTB">
-				<form class="col-sm-12 form-group row baseline">
+			<div class="col-lg-8 col-xs-12 d-flex flex-row">
+				<form class="col-sm-12 form-group row">
 					<div class="form-group row col-sm-10">
 						<label for="suscripcion" class="col-form-label">Recibí ofertas y promociones</label>
-						<div class="col-sm-8">
+						<div class="col-6">
 							<input type="text" class="form-control focus" id="suscripcion" placeholder="E-mail">
 						</div>
 					</div>
-					<div class="col-sm-2">
+					<div class="col-sm-2 submit">
 						<input type="submit" class="btn btn-outline-light btn-sm" value="SUSCRIBIRME">
 					</div>
 				</form>
 			</div>
 		</div>
-		<div class="row d-flex flex-row justify-content-around">
+		<div class="row footer f-start">
 			<div class="col-lg-4 col-xs-12 paddingTB text-center">
 				<div>
 					<h5>MEDIOS DE PAGO</h5>
@@ -445,12 +443,14 @@
 				<p class="text-center">2021 <i class="far fa-copyright"></i>Copyright ZAHI Delicias. Todos los derechos reservados.</p>
 			</div>
 		</div>
+		</div>
 		<div class="row">
 			<div class="col-xs-12">
-				<a href="https://api.whatsapp.com/send?phone=[54][1168287951]"><img src="assets/images/whatsapp.png" width="20%" id="whatsapp"></a>
+				<a href="https://api.whatsapp.com/send?phone=[54][1168287951]"><img src="../assets/images/whatsapp.png" width="20%" id="whatsapp"></a>
 			</div>
 		</div>
 	</div>
+	<!-- FIN FOOTER -->
 	<!-- jQuery and Bootstrap Bundle (includes Popper) -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

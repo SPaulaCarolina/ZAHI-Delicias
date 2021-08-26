@@ -1,10 +1,15 @@
 body {
+  color: ghostwhite;
   background-color: #121210; }
 
 .icon {
   color: ghostwhite; }
 
-.encabezadoA, .encabezadoB, .card-title {
+#navDesktop ul {
+  color: #0d0b0b;
+  background-color: #faf9f0; }
+
+.text-wh {
   color: ghostwhite;
   text-shadow: 2px 2px #121210; }
 
@@ -38,9 +43,6 @@ body {
   color: ghostwhite;
   text-shadow: 2px 2px #121210; }
 
-body, .fullPrint {
-  width: 100%; }
-
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   #logo {
     width: 75%; } }
@@ -55,7 +57,7 @@ body, .fullPrint {
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .sectionLogo {
-    width: 97%; } }
+    width: 50%; } }
 
 .columna {
   width: 90%; }
@@ -72,19 +74,28 @@ body, .fullPrint {
 body {
   justify-content: center; }
 
-.navBar {
+.nav-bar {
   display: flex;
   flex-flow: row nowrap;
   align-items: center; }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
-    .navBar {
+    .nav-bar {
       justify-content: center; } }
 
-.firstSection {
+#navDesktop ul {
+  justify-content: center; }
+
+.title-container {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-around; }
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.card-title-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .tienda {
@@ -107,8 +118,53 @@ body {
 .baseline {
   align-items: baseline; }
 
-.alignCenter {
+.align-center {
   align-items: center; }
+
+.acerca-de {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .acerca-de {
+      flex-flow: column nowrap; } }
+  @media only screen and (min-width: 768px) {
+    .acerca-de {
+      flex-flow: row nowrap; } }
+
+.section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .footer {
+      flex-flow: column nowrap; } }
+  @media only screen and (min-width: 768px) {
+    .footer {
+      flex-flow: row nowrap; } }
+
+.submit {
+  justify-content: flex-start; }
+
+.f-start {
+  display: flex; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .f-start {
+      flex-flow: column nowrap;
+      justify-content: center; } }
+  @media only screen and (min-width: 768px) {
+    .f-start {
+      flex-flow: row nowrap;
+      justify-content: flex-start; } }
+
+.iconsContainer {
+  padding: 10px; }
 
 .icon {
   margin: 2px; }
@@ -165,6 +221,9 @@ body {
 .Style2 {
   margin-top: 100px; }
 
+.footer {
+  margin-top: 20px; }
+
 html {
   font-size: 62, 5%;
   font-family: "Staatliches", cursive; }
@@ -175,32 +234,45 @@ html {
 .iconS {
   font-size: 1.2rem; }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .encabezadoA {
-    font-size: 1.2rem; } }
+.title-view {
+  font-family: "Handlee", cursive; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .title-view {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 768px) {
+    .title-view {
+      font-size: 8rem; } }
 
-@media only screen and (min-width: 768px) {
-  .encabezadoA {
-    font-size: 3.5rem; } }
+.encabezadoA {
+  font-family: "Handlee", cursive; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .encabezadoA {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 768px) {
+    .encabezadoA {
+      font-size: 3.5rem; } }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .encabezadoB {
-    font-size: 1rem; } }
-
-@media only screen and (min-width: 768px) {
-  .encabezadoB {
-    font-size: 2rem; } }
+.encabezadoB {
+  font-family: "Handlee", cursive; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .encabezadoB {
+      font-size: 1rem; } }
+  @media only screen and (min-width: 768px) {
+    .encabezadoB {
+      font-size: 2rem; } }
 
 .comunidad h1 {
+  font-family: "Handlee", cursive;
   font-size: 1.8rem; }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .comunidad h3 {
-    font-size: 1rem; } }
-
-@media only screen and (min-width: 768px) {
-  .comunidad h3 {
-    font-size: 1.8rem; } }
+.comunidad h3 {
+  font-family: "Handlee", cursive; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .comunidad h3 {
+      font-size: 1rem; } }
+  @media only screen and (min-width: 768px) {
+    .comunidad h3 {
+      font-size: 1.8rem; } }
 
 .text {
   font-size: 0.8rem; }
@@ -243,9 +315,10 @@ html {
   .animText ul {
     list-style-type: none; }
 
-.Style2 {
-  font-family: "Allura", cursive;
-  font-size: 3.5rem; }
+.card-name {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-family: "Handlee", cursive; }
 
 .iconsContainer {
   text-align: right; }
@@ -268,9 +341,9 @@ html {
     bottom: 75px;
     z-index: 0; } }
 
-.sectionLogo {
-  position: relative;
-  left: 250px; }
+@media only screen and (min-width: 768px) {
+  .sectionLogo {
+    position: relative; } }
 
 @media only screen and (min-width: 768px) {
   #portada {

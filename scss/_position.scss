@@ -41,8 +41,9 @@ $hidden: hidden;
 	}
 }
 .sectionLogo {
-	position:$p-relative;
-	left:$m-250;
+	@media only screen and (min-width: 768px) {
+		position:$p-relative;
+	}
 }
 #portada {
 	@media only screen and (min-width: 768px) {

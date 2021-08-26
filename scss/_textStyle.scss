@@ -1,7 +1,7 @@
 $no-style: none;
 $bold: bold;
-$Style1:'Staatliches', cursive;
-$Style2: 'Allura', cursive;
+$style1:'Staatliches', cursive;
+$style2: 'Handlee', cursive;
 $iconM: 2rem;
 $iconL: 6rem;
 $normal: 62,5%;
@@ -20,7 +20,7 @@ $expand: 200%;
 
 html {
 	font-size:$normal; 
-	font-family:$Style1;}
+	font-family:$style1;}
 
 
 .icon {
@@ -29,7 +29,17 @@ html {
 .iconS {
 	font-size:$textS;
 }
+.title-view {
+	font-family:$style2;
+	@media only screen and (min-width: 320px) and (max-width: 767px) {
+		font-size:$textS;
+	}
+	@media only screen and (min-width: 768px) {
+		font-size:$titleXL;
+	}
+}
 .encabezadoA {
+	font-family:$style2;
 	@media only screen and (min-width: 320px) and (max-width: 767px) {
 		font-size:$textS;
 	}
@@ -38,6 +48,7 @@ html {
 	}
 }
 .encabezadoB {
+	font-family:$style2;
 	@media only screen and (min-width: 320px) and (max-width: 767px) {
 		font-size:$textXS;
 	}
@@ -45,15 +56,19 @@ html {
 		font-size:$titleM;
 	}
 }
-.comunidad h1 {
+.comunidad {
+	h1 {
+	font-family:$style2;
 	font-size:$titleS;
 	}
-.comunidad h3 {
-	@media only screen and (min-width: 320px) and (max-width: 767px) {
-		font-size:$textXS;
-	}
-	@media only screen and (min-width: 768px) {
-		font-size:$titleS;
+	h3 {
+	font-family:$style2;
+		@media only screen and (min-width: 320px) and (max-width: 767px) {
+			font-size:$textXS;
+		}
+		@media only screen and (min-width: 768px) {
+			font-size:$titleS;
+		}
 	}
 }
 .text {
@@ -98,9 +113,10 @@ html {
 		list-style-type:$no-style;
 	}
 }
-.Style2 {
-	font-family:$Style2;
-	font-size:$titleL;
+.card-name {
+	text-decoration:$no-deco;
+	font-size:$titleS;
+	font-family:$style2;
 }
 
 

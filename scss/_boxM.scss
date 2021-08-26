@@ -14,6 +14,9 @@ $neg-80: -80px;
 $neg-120: -120px;
 $p-public: 250px 50px 250px 50px;
 
+.iconsContainer {
+	padding:$m-10;
+}
 .icon {
 	margin:$m-2;
 }
@@ -63,4 +66,7 @@ $p-public: 250px 50px 250px 50px;
 }
  .Style2 {
  	margin-top:$p-100;
+ }
+ .footer {
+ 	margin-top:$p-20;
  }
