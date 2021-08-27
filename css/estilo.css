@@ -19,17 +19,6 @@ body {
 .bg-image p {
   text-shadow: 1px 1px #121210; }
 
-.card {
-  color: #0d0b0b;
-  background-color: #faf9f0; }
-
-.bg-text {
-  color: ghostwhite;
-  opacity: 0.25;
-  transition: all 2s; }
-  .bg-text:hover {
-    opacity: 0.99; }
-
 .bg-card {
   background-color: #121210; }
 
@@ -43,6 +32,13 @@ body {
   color: ghostwhite;
   text-shadow: 2px 2px #121210; }
 
+.animForm {
+  color: ghostwhite;
+  opacity: 0.25;
+  transition: all 2s; }
+  .animForm:hover {
+    opacity: 0.99; }
+
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   #logo {
     width: 75%; } }
@@ -52,14 +48,18 @@ body {
   #navMobile button {
     width: 97%; }
 
-.bg-image {
-  background-size: cover; }
-
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .sectionLogo {
     width: 50%; } }
 
-.columna {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .modal {
+    width: 75%; } }
+
+.bg-image {
+  background-size: cover; }
+
+.column-item {
   width: 90%; }
 
 .publicidad {
@@ -85,40 +85,10 @@ body {
 #navDesktop ul {
   justify-content: center; }
 
-.title-container {
+.title-container, .section {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center; }
-
-.card-title-container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center; }
-
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .tienda {
-    flex-flow: column nowrap; } }
-
-.form {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around; }
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
-    .form {
-      flex-flow: column nowrap; } }
-  @media only screen and (min-width: 768px) {
-    .form {
-      flex-flow: row nowrap; } }
-
-.animText {
-  display: flex; }
-
-.baseline {
-  align-items: baseline; }
-
-.align-center {
   align-items: center; }
 
 .acerca-de {
@@ -132,42 +102,58 @@ body {
     .acerca-de {
       flex-flow: row nowrap; } }
 
-.section {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .tienda {
+    flex-flow: column nowrap; } }
+
+.bg-image {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center; }
+  flex-flow: row nowrap;
+  justify-content: center; }
+
+.form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .form {
+      flex-flow: column nowrap; } }
+  @media only screen and (min-width: 768px) {
+    .form {
+      flex-flow: row nowrap; } }
 
 .footer {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     .footer {
-      flex-flow: column nowrap; } }
+      flex-flow: column nowrap;
+      align-items: center; } }
   @media only screen and (min-width: 768px) {
     .footer {
-      flex-flow: row nowrap; } }
+      flex-flow: row nowrap;
+      align-items: flex-start; } }
+
+.animText {
+  display: flex; }
 
 .submit {
   justify-content: flex-start; }
 
-.f-start {
-  display: flex; }
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
-    .f-start {
-      flex-flow: column nowrap;
-      justify-content: center; } }
-  @media only screen and (min-width: 768px) {
-    .f-start {
-      flex-flow: row nowrap;
-      justify-content: flex-start; } }
+.align-center {
+  align-items: center; }
 
 .iconsContainer {
   padding: 10px; }
 
 .icon {
-  margin: 2px; }
+  margin: 5px; }
+
+.margin-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px; }
 
 .paddingTB {
   padding-top: 10px;
@@ -186,10 +172,11 @@ body {
   padding-bottom: 5px; }
 
 #whatsapp {
-  margin: 2px; }
+  margin: 10px; }
 
 .animText {
-  margin: auto; }
+  margin: auto;
+  padding-left: 50px; }
   .animText ul {
     padding-left: 10px; }
   .animText p, .animText ul {
@@ -215,14 +202,29 @@ body {
 .noMargin {
   margin: 0px; }
 
-.encabezadoA, .encabezadoB {
+.carousel-title {
   margin-bottom: 10px; }
 
 .Style2 {
   margin-top: 100px; }
 
 .footer {
-  margin-top: 20px; }
+  margin-top: 10px; }
+
+.info {
+  margin-top: 10px; }
+  .info p {
+    padding: 5px; }
+
+.iconS {
+  padding: 2px; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .modal {
+    margin-left: 50px; } }
+
+.m-left {
+  margin-left: 10px; }
 
 html {
   font-size: 62, 5%;
@@ -243,23 +245,24 @@ html {
     .title-view {
       font-size: 8rem; } }
 
-.encabezadoA {
+.carousel-title {
   font-family: "Handlee", cursive; }
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
-    .encabezadoA {
-      font-size: 1.2rem; } }
-  @media only screen and (min-width: 768px) {
-    .encabezadoA {
-      font-size: 3.5rem; } }
 
-.encabezadoB {
-  font-family: "Handlee", cursive; }
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
-    .encabezadoB {
-      font-size: 1rem; } }
-  @media only screen and (min-width: 768px) {
-    .encabezadoB {
-      font-size: 2rem; } }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .titleA {
+    font-size: 1.2rem; } }
+
+@media only screen and (min-width: 768px) {
+  .titleA {
+    font-size: 3rem; } }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .titleB {
+    font-size: 1rem; } }
+
+@media only screen and (min-width: 768px) {
+  .titleB {
+    font-size: 1.8rem; } }
 
 .comunidad h1 {
   font-family: "Handlee", cursive;
@@ -286,20 +289,14 @@ html {
 .parrafo {
   font-size: 1rem; }
 
-.contacto h1 {
-  font-size: 1.8rem; }
-
-.contacto h3 {
-  font-size: 1.4rem; }
-
-.contacto h5 {
-  font-size: 1rem; }
-
-.link {
-  text-decoration: none;
-  transition: all 2; }
-  .link:hover {
-    font-size: 200%; }
+.contacto {
+  font-family: "Handlee", cursive; }
+  .contacto h1 {
+    font-size: 1.8rem; }
+  .contacto h3 {
+    font-size: 1.4rem; }
+  .contacto h5 {
+    font-size: 1.2rem; }
 
 .description {
   font-size: 1rem; }
@@ -311,13 +308,22 @@ html {
   font-weight: bold; }
 
 .animText {
-  font-size: 1.6rem; }
+  font-family: "Handlee", cursive; }
   .animText ul {
     list-style-type: none; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .animText {
+      font-size: 1rem; } }
+  @media only screen and (min-width: 768px) {
+    .animText {
+      font-size: 1.6rem; } }
 
 .card-name {
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-family: "Handlee", cursive; }
+
+.modal-content {
   font-family: "Handlee", cursive; }
 
 .iconsContainer {
@@ -336,38 +342,27 @@ html {
   z-index: 1; }
 
 @media only screen and (min-width: 768px) {
-  #carousel {
+  #carousel, #portada {
     position: relative;
     bottom: 75px;
     z-index: 0; } }
+
+.carousel-title {
+  text-align: center; }
 
 @media only screen and (min-width: 768px) {
   .sectionLogo {
     position: relative; } }
 
-@media only screen and (min-width: 768px) {
-  #portada {
-    position: relative;
-    bottom: 75px;
-    z-index: 0; } }
+.sectionTitle, .sectionSubtitle, .parrafo {
+  text-align: center; }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .cards {
-    position: relative;
-    left: 20px; } }
-
-.bg-image, body {
+.bg-image {
   background-position: center; }
 
-@media only screen and (min-width: 320px) and (max-width: 1023px) {
-  #whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px; } }
-
-.logIn {
+.column {
   position: relative;
-  left: 50px; }
+  top: 50px; }
 
 .publicidad {
   background-position: center;
@@ -381,14 +376,19 @@ html {
   right: 0;
   overflow: hidden; }
 
-.sectionTitle, .parrafo, .sectionSubtitle {
-  text-align: center; }
+@media only screen and (min-width: 768px) {
+  .subscribe {
+    position: relative;
+    left: 100px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+  #whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; } }
 
 .z-1 {
   z-index: 1; }
-
-.Style2 {
-  text-align: center; }
 
 @media only screen and (min-width: 1024px) {
   #navMobile {
@@ -399,7 +399,7 @@ html {
     display: none; } }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .carousel-caption {
+  .carousel-title {
     display: none; } }
 
 @media only screen and (min-width: 1024px) {

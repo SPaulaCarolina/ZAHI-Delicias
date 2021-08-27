@@ -1,59 +1,55 @@
-$no-style: none;
+$no: none;
 $bold: bold;
 $style1:'Staatliches', cursive;
 $style2: 'Handlee', cursive;
-$iconM: 2rem;
-$iconL: 6rem;
 $normal: 62,5%;
-$titleXXL: 12rem;
+$icon: 2rem;
 $titleXL: 8rem;
-$titleL: 3.5rem;
+$titleL: 3rem;
 $titleM: 2rem;
 $titleS: 1.8rem;
-$textL: 1.6rem;
-$textM: 1.4rem;
-$textS: 1.2rem;
-$textXS: 1rem;
-$textXXS: 0.8rem;
-$no-deco: none;
-$expand: 200%;
+$textXL: 1.6rem;
+$textL: 1.4rem;
+$textM: 1.2rem;
+$textS: 1rem;
+$textXS: 0.8rem;
+
 
 html {
 	font-size:$normal; 
 	font-family:$style1;}
-
-
 .icon {
-	font-size:$iconM;
+	font-size:$icon;
 }
 .iconS {
-	font-size:$textS;
+	font-size:$textM;
 }
 .title-view {
 	font-family:$style2;
 	@media only screen and (min-width: 320px) and (max-width: 767px) {
-		font-size:$textS;
+		font-size:$textM;
 	}
 	@media only screen and (min-width: 768px) {
 		font-size:$titleXL;
 	}
 }
-.encabezadoA {
+.carousel-title {
 	font-family:$style2;
+}
+.titleA {
 	@media only screen and (min-width: 320px) and (max-width: 767px) {
-		font-size:$textS;
+		font-size:$textM;
 	}
 	@media only screen and (min-width: 768px) {
 		font-size:$titleL;
 	}
 }
-.encabezadoB {
-	font-family:$style2;
+.titleB {
 	@media only screen and (min-width: 320px) and (max-width: 767px) {
-		font-size:$textXS;
+		font-size:$textS;
 	}
 	@media only screen and (min-width: 768px) {
-		font-size:$titleM;
+		font-size:$titleS;
 	}
 }
 .comunidad {
@@ -64,7 +60,7 @@ html {
 	h3 {
 	font-family:$style2;
 		@media only screen and (min-width: 320px) and (max-width: 767px) {
-			font-size:$textXS;
+			font-size:$textS;
 		}
 		@media only screen and (min-width: 768px) {
 			font-size:$titleS;
@@ -72,51 +68,55 @@ html {
 	}
 }
 .text {
-	font-size:$textXXS;
+	font-size:$textXS;
 }
 .sectionTitle {
 	font-size:$titleS;
 	}
 .sectionSubtitle {
-	font-size:$textL;
+	font-size:$textXL;
 	}
 .parrafo {
-	font-size:$textXS;
+	font-size:$textS;
 	}
-.contacto h1 {
-	font-size:$titleS;
+.contacto {
+	font-family:$style2;
+	h1 {
+		font-size:$titleS;
 	}
-.contacto h3 {
-	font-size:$textM;
+	h3 {
+		font-size:$textL;
 	}
-.contacto h5 {
-	font-size:$textXS;
-}
-.link {
-	text-decoration:$no-deco;
-	transition: all 2;
-	&:hover {
-		font-size:$expand;
+	h5 {
+		font-size:$textM;
 	}
 }
 .description {
-		font-size:$textXS;
+		font-size:$textS;
 	}
 .footer {
-	font-size:$textS;}
+	font-size:$textM;
+}
 .publicidad {
 	font-weight:$bold;
 }
 .animText {
-	font-size:$textL;
+	font-family:$style2;
 	ul {
-		list-style-type:$no-style;
+		list-style-type:$no;
+	}
+	@media only screen and (min-width: 320px) and (max-width: 767px) {
+		font-size:$textS;
+	}
+	@media only screen and (min-width: 768px) {
+		font-size:$textXL;
 	}
 }
 .card-name {
-	text-decoration:$no-deco;
-	font-size:$titleS;
+	text-decoration:$no;
+	font-size:$titleM;
 	font-family:$style2;
 }
-
-
+.modal-content {
+	font-family:$style2;
+}

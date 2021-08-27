@@ -1,17 +1,12 @@
 $bg-cover: cover;
 $bg-cont: contain;
 $full: 100%;
-$w-50: 50%;
 $w-40: 40%;
+$w-50: 50%;
 $w-75: 75%;
-$w-100: 97%;
 $w-90: 90%;
-$h-100: 100%;
-$w-300: 300%;
-$h-104: 104%;
-$h-1000: 1000%;
+$w-100: 97%;
 $h-40: 40px;
-$w-102: 102%;
 
 #logo {
 	@media only screen and (min-width:320px) and (max-width:767px) {
@@ -24,22 +19,29 @@ $w-102: 102%;
 		width:$w-100;
 	}
 }
-.bg-image {
-	background-size:$bg-cover;}	
-
 .sectionLogo {
 	@media only screen and (min-width:320px) and (max-width:767px) {
 		width:$w-50;
 	}
 }
-.columna {
+.modal {
+	@media only screen and (min-width:320px) and (max-width:767px) {
+		width:$w-75;
+	}
+}
+.bg-image {
+	background-size:$bg-cover;
+}	
+.column-item {
 	width:$w-90;
 }
 .publicidad {
 	height:$w-40;
-	background-size:$bg-cover;}
+	background-size:$bg-cover;
+}
 .animText {
 	width:$w-90;
 	height:$h-40;
 	line-height:$h-40;
 }
+

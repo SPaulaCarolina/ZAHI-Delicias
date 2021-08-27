@@ -1,34 +1,29 @@
-$negro: #0d0b0b;
-$oscuro: #121210;
-$darkGrey: #261b0f;
-$blanco: ghostwhite;
-$bg-light: #faf9f0;
-$beige: lightgoldenrodyellow;
-$verde: #15d445;
-$color: #91061d;
+$bl: #0d0b0b;
+$dark: #121210;
+$wh: ghostwhite;
+$light: #faf9f0;
 $o-100:0.99;
 $o-75: 0.75;
 $o-25: 0.25;
 $o-0: 0;
-$marron: #c9c997;
 $shadow: 2px 2px #121210;
 $shadow-s: 1px 1px #121210;
 
 body {
-	color:$blanco;
-	background-color:$oscuro;
+	color:$wh;
+	background-color:$dark;
 }
 .icon {
-	color:$blanco;
+	color:$wh;
 }
 #navDesktop {
 	ul {
-		color:$negro;
-		background-color:$bg-light;
+		color:$bl;
+		background-color:$light;
 	}
 }
 .text-wh {
-	color:$blanco;
+	color:$wh;
 	text-shadow:$shadow;
 }
 .bg-image {
@@ -39,28 +34,24 @@ body {
 		text-shadow:$shadow-s;
 	}
 }
-.card {
-	color:$negro;
-	background-color:$bg-light;
+.bg-card {
+	background-color:$dark;
 }
-.bg-text {
-	color:$blanco;
+@keyframes promoAnimada {
+	0% {background-color:$bl;}
+	10% {background-color:$bl;}
+}
+.animText {
+	color:$wh;
+	text-shadow:$shadow;
+}
+.animForm {
+	color:$wh;
 	opacity:$o-25;
 	transition: all 2s;
 	&:hover {
 		opacity:$o-100;
 	}
-}
-.bg-card {
-	background-color:$oscuro;
-}
-@keyframes promoAnimada {
-	0% {background-color:$negro;}
-	10% {background-color:$negro;}
-}
-.animText {
-	color:$blanco;
-	text-shadow:$shadow;
 }
 
 

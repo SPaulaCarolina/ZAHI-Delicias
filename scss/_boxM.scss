@@ -1,10 +1,10 @@
 $none: 0px;
-$m-1: 1px;
-$m-2: 2px;
-$m-10: 10px;
+$p-1: 1px;
+$p-2: 2px;
 $p-10: 10px;
-$m-25: 25px;
+$p-25: 25px;
 $p-50: 50px;
+$p-75: 75px;
 $p-100: 100px;
 $p-20: 20px;
 $p-5: 5px;
@@ -15,10 +15,16 @@ $neg-120: -120px;
 $p-public: 250px 50px 250px 50px;
 
 .iconsContainer {
-	padding:$m-10;
+	padding:$p-10;
 }
 .icon {
-	margin:$m-2;
+	margin:$p-5;
+}
+.margin-section {
+	margin-top:$p-50;
+	margin-bottom:$p-50;
+	margin-left:$p-10;
+	margin-right:$p-10;
 }
 .paddingTB {
 	padding-top:$p-10;
@@ -29,17 +35,18 @@ $p-public: 250px 50px 250px 50px;
 	padding-bottom:$p-20;
 }
 .marginLR {
-	margin-left:$m-25; 
-	margin-right:$m-25;
+	margin-left:$p-25; 
+	margin-right:$p-25;
 }
 .paddingForm {
 	padding-top:$p-5; 
 	padding-bottom:$p-5;}
 #whatsapp {
-	margin:$m-2;
+	margin:$p-10;
 }
 .animText {
 	margin:$auto;
+	padding-left:$p-50;
 	ul {
 		padding-left:$p-10;
 	}
@@ -61,12 +68,29 @@ $p-public: 250px 50px 250px 50px;
 .noMargin {
 	margin:$none;
 }
-.encabezadoA,.encabezadoB {
-	margin-bottom:$m-10;
+.carousel-title {
+	margin-bottom:$p-10;
 }
  .Style2 {
  	margin-top:$p-100;
  }
  .footer {
- 	margin-top:$p-20;
+ 	margin-top:$p-10;
+ }
+ .info {
+ 	margin-top:$p-10;
+ 	p {
+ 		padding:$p-5;
+ 	}
+ }
+ .iconS {
+ 	padding:$p-2;
+ }
+ .modal {
+ 	@media only screen and (min-width:320px) and (max-width:767px) {
+ 		margin-left:$p-50;
+ 	}
+ }
+ .m-left {
+ 	margin-left:$p-10;
  }

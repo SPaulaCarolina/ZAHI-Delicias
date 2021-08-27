@@ -6,41 +6,50 @@ $jc-around: space-around;
 $jc-between: space-between;
 $f-start: flex-start;
 $jc-end: flex-end;
-$center: center;
-$align-base: baseline;
+$cen: center;
 
 body {
-	justify-content:$center;
+	justify-content:$cen;
 }
 .nav-bar {
 	display:$d-flex;
 	flex-flow:$row-no-w;
-	align-items:$center;
+	align-items:$cen;
 	@media only screen and (min-width:320px) and (max-width:767px) {
-		justify-content:$center;
+		justify-content:$cen;
 	}
 }
 #navDesktop {
 	ul {
-		justify-content:$center;
+		justify-content:$cen;
 	}
 }
-.title-container {
+.title-container,.section {
 	display:$d-flex;
 	flex-flow:$column-no-w;
-	justify-content: $center;
-	align-items:$center;
+	justify-content: $cen;
+	align-items:$cen;
 }
-.card-title-container {
+.acerca-de {
 	display:$d-flex;
-	flex-flow:$column-no-w;
-	justify-content: $center;
-	align-items:$center;
+	justify-content: $cen;
+	align-items:$cen;
+	@media only screen and (min-width:320px) and (max-width:767px) {
+		flex-flow:$column-no-w;
+	}
+	@media only screen and (min-width:768px) {
+		flex-flow:$row-no-w;
+	}
 }
 .tienda {
 	@media only screen and (min-width:320px) and (max-width:767px) {
 		flex-flow:$column-no-w;
 	}
+}
+.bg-image {
+	display:$d-flex;
+	flex-flow:$row-no-w;
+	justify-content: $cen;
 }
 .form {
 	display:$d-flex;
@@ -53,54 +62,27 @@ body {
 		flex-flow:$row-no-w;
 	}
 }
-.animText {
-	display:$d-flex;
-}
-.baseline {
-	align-items:$align-base;
-}
-.align-center {
-	align-items:$center;
-}
-.acerca-de {
-	display:$d-flex;
-	justify-content: $center;
-	align-items:$center;
-	@media only screen and (min-width:320px) and (max-width:767px) {
-		flex-flow:$column-no-w;
-	}
-	@media only screen and (min-width:768px) {
-		flex-flow:$row-no-w;
-	}
-}
-.section {
-	display:$d-flex;
-	flex-flow:$column-no-w;
-	justify-content: $center;
-	align-items:$center;
-}
 .footer {
 	display:$d-flex;
-	justify-content: $center;
-	align-items:$center;
+	justify-content: $cen;
 	@media only screen and (min-width:320px) and (max-width:767px) {
 		flex-flow:$column-no-w;
+		align-items:$cen;
 	}
 	@media only screen and (min-width:768px) {
 		flex-flow:$row-no-w;
+		align-items: $f-start;
 	}
+}
+.animText {
+	display:$d-flex;
 }
 .submit {
 	justify-content: $f-start;
 }
-.f-start {
-	display:$d-flex;
-	@media only screen and (min-width:320px) and (max-width:767px) {
-		flex-flow:$column-no-w;
-		justify-content: $center;
-	}
-	@media only screen and (min-width:768px) {
-		flex-flow:$row-no-w;
-		justify-content: $f-start;
-	}
+.align-center {
+	align-items:$cen;
 }
+
+
+
