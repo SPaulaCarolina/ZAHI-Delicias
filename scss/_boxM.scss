@@ -1,14 +1,14 @@
 $none: 0px;
-$p-1: 1px;
+$auto: auto;
 $p-2: 2px;
+$p-5: 5px;
 $p-10: 10px;
+$p-20: 20px;
 $p-25: 25px;
 $p-50: 50px;
+$p-60: 60px;
 $p-75: 75px;
 $p-100: 100px;
-$p-20: 20px;
-$p-5: 5px;
-$auto: auto;
 $neg-40: -40px;
 $neg-80: -80px;
 $neg-120: -120px;
@@ -20,33 +20,92 @@ $p-public: 250px 50px 250px 50px;
 .icon {
 	margin:$p-5;
 }
+.iconS {
+ 	padding:$p-2;
+ }
+.section-logo {
+	margin-bottom:$p-5;
+}
+.section-title {
+	margin-top:$p-20;
+	margin-bottom:$p-20;
+}
+.section-subt {
+	margin-top:$p-10;
+	margin-bottom:$p-10;
+}
+.article {
+	margin-top:$p-5;
+	margin-bottom:$p-5;
+}
+.carousel-title {
+	margin-bottom:$p-10;
+}
+.padding-carousel {
+	padding:$p-20;
+}
 .margin-section {
 	margin-top:$p-50;
 	margin-bottom:$p-50;
 	margin-left:$p-10;
 	margin-right:$p-10;
 }
+.padding-form {
+	padding-top:$p-5; 
+	padding-bottom:$p-5;
+}
+.containerText {
+	padding:$p-public;
+}
+.modal {
+ 	@media only screen and (min-width:320px) and (max-width:767px) {
+ 		margin-left:$p-20;
+ 	}
+ }
+.column-item {
+ 	margin-top:$p-20;
+ 	margin-bottom:$p-50;
+ 	margin-left:$p-25;
+ }
+.bg-card {
+ 	@media only screen and (min-width:320px) and (max-width:767px) {
+ 		margin-left:$p-50;
+ 	}
+ }
+.info {
+ 	margin-top:$p-10;
+ 	p {
+ 		padding:$p-5;
+ 	}
+ }
+.m-left {
+ 	margin-left:$p-10;
+ }
 .paddingTB {
 	padding-top:$p-10;
 	padding-bottom:$p-50;
 }
-.paddingSectionTB {
-	padding-top:$p-20;
-	padding-bottom:$p-20;
+.marginTB {
+	margin-top:$p-20;
+	margin-bottom:$p-20;
 }
 .marginLR {
 	margin-left:$p-25; 
 	margin-right:$p-25;
 }
-.paddingForm {
-	padding-top:$p-5; 
-	padding-bottom:$p-5;}
-#whatsapp {
-	margin:$p-10;
+.error-image {
+	@media only screen and (min-width:320px) and (max-width:767px) {
+ 		margin-left:$p-75;
+ 	}
 }
 .animText {
 	margin:$auto;
-	padding-left:$p-50;
+	@media only screen and (min-width:320px) and (max-width:767px) {
+		padding-left:$p-60;
+	}
+	@media only screen and (min-width:768px){
+		padding-left:$p-25;
+	}
 	ul {
 		padding-left:$p-10;
 	}
@@ -62,35 +121,9 @@ $p-public: 250px 50px 250px 50px;
 	75% {margin-top:$neg-80}
 	100% {margin-top:$neg-80}
 }
-.containerText {
-	padding:$p-public;
-}
-.noMargin {
-	margin:$none;
-}
-.carousel-title {
-	margin-bottom:$p-10;
-}
- .Style2 {
- 	margin-top:$p-100;
- }
- .footer {
- 	margin-top:$p-10;
- }
- .info {
- 	margin-top:$p-10;
- 	p {
- 		padding:$p-5;
+#mapa {
+	@media only screen and (min-width:320px) and (max-width:767px) {
+ 		margin-left:$p-75;
  	}
- }
- .iconS {
- 	padding:$p-2;
- }
- .modal {
- 	@media only screen and (min-width:320px) and (max-width:767px) {
- 		margin-left:$p-50;
- 	}
- }
- .m-left {
- 	margin-left:$p-10;
- }
+}
+

@@ -49,12 +49,12 @@ body {
     width: 97%; }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .sectionLogo {
+  .section-logo {
     width: 50%; } }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .modal {
-    width: 75%; } }
+    width: 90%; } }
 
 .bg-image {
   background-size: cover; }
@@ -85,21 +85,21 @@ body {
 #navDesktop ul {
   justify-content: center; }
 
-.title-container, .section {
+.title-container, .flex-section {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center; }
 
-.acerca-de {
+.flex-container, .error {
   display: flex;
   justify-content: center;
   align-items: center; }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
-    .acerca-de {
+    .flex-container, .error {
       flex-flow: column nowrap; } }
   @media only screen and (min-width: 768px) {
-    .acerca-de {
+    .flex-container, .error {
       flex-flow: row nowrap; } }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -149,34 +149,88 @@ body {
 .icon {
   margin: 5px; }
 
+.iconS {
+  padding: 2px; }
+
+.section-logo {
+  margin-bottom: 5px; }
+
+.section-title {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.section-subt {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.article {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.carousel-title {
+  margin-bottom: 10px; }
+
+.padding-carousel {
+  padding: 20px; }
+
 .margin-section {
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: 10px;
   margin-right: 10px; }
 
+.padding-form {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.containerText {
+  padding: 250px 50px 250px 50px; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .modal {
+    margin-left: 20px; } }
+
+.column-item {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 25px; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .bg-card {
+    margin-left: 50px; } }
+
+.info {
+  margin-top: 10px; }
+  .info p {
+    padding: 5px; }
+
+.m-left {
+  margin-left: 10px; }
+
 .paddingTB {
   padding-top: 10px;
   padding-bottom: 50px; }
 
-.paddingSectionTB {
-  padding-top: 20px;
-  padding-bottom: 20px; }
+.marginTB {
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .marginLR {
   margin-left: 25px;
   margin-right: 25px; }
 
-.paddingForm {
-  padding-top: 5px;
-  padding-bottom: 5px; }
-
-#whatsapp {
-  margin: 10px; }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .error-image {
+    margin-left: 75px; } }
 
 .animText {
-  margin: auto;
-  padding-left: 50px; }
+  margin: auto; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .animText {
+      padding-left: 60px; } }
+  @media only screen and (min-width: 768px) {
+    .animText {
+      padding-left: 25px; } }
   .animText ul {
     padding-left: 10px; }
   .animText p, .animText ul {
@@ -196,35 +250,9 @@ body {
   100% {
     margin-top: -80px; } }
 
-.containerText {
-  padding: 250px 50px 250px 50px; }
-
-.noMargin {
-  margin: 0px; }
-
-.carousel-title {
-  margin-bottom: 10px; }
-
-.Style2 {
-  margin-top: 100px; }
-
-.footer {
-  margin-top: 10px; }
-
-.info {
-  margin-top: 10px; }
-  .info p {
-    padding: 5px; }
-
-.iconS {
-  padding: 2px; }
-
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .modal {
-    margin-left: 50px; } }
-
-.m-left {
-  margin-left: 10px; }
+  #mapa {
+    margin-left: 75px; } }
 
 html {
   font-size: 62, 5%;
@@ -280,13 +308,13 @@ html {
 .text {
   font-size: 0.8rem; }
 
-.sectionTitle {
+.section-title {
   font-size: 1.8rem; }
 
-.sectionSubtitle {
+.section-subt {
   font-size: 1.6rem; }
 
-.parrafo {
+.article {
   font-size: 1rem; }
 
 .contacto {
@@ -301,11 +329,24 @@ html {
 .description {
   font-size: 1rem; }
 
-.footer {
-  font-size: 1.2rem; }
+.card-name {
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Handlee", cursive; }
 
 .publicidad {
   font-weight: bold; }
+
+.modal-caption {
+  font-family: "Handlee", cursive;
+  font-size: 0.8rem; }
+
+.error {
+  font-family: "Handlee", cursive;
+  font-size: 2rem; }
+
+.footer {
+  font-size: 1.2rem; }
 
 .animText {
   font-family: "Handlee", cursive; }
@@ -316,15 +357,10 @@ html {
       font-size: 1rem; } }
   @media only screen and (min-width: 768px) {
     .animText {
-      font-size: 1.6rem; } }
+      font-size: 1.4rem; } }
 
-.card-name {
-  text-decoration: none;
-  font-size: 2rem;
-  font-family: "Handlee", cursive; }
-
-.modal-content {
-  font-family: "Handlee", cursive; }
+body {
+  overflow-x: hidden; }
 
 .iconsContainer {
   text-align: right; }
@@ -347,14 +383,11 @@ html {
     bottom: 75px;
     z-index: 0; } }
 
-.carousel-title {
-  text-align: center; }
-
 @media only screen and (min-width: 768px) {
-  .sectionLogo {
+  .section-logo {
     position: relative; } }
 
-.sectionTitle, .sectionSubtitle, .parrafo {
+.carousel-title, .section-title, .section-subt, .article {
   text-align: center; }
 
 .bg-image {
@@ -368,6 +401,19 @@ html {
   background-position: center;
   text-align: center; }
 
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .modal {
+    position: relative;
+    top: 100px; } }
+
+@media only screen and (min-width: 768px) {
+  .subscribe {
+    position: relative;
+    left: 100px; } }
+
+.z-1 {
+  z-index: 1; }
+
 .animText {
   position: absolute;
   top: 0;
@@ -376,21 +422,13 @@ html {
   right: 0;
   overflow: hidden; }
 
-@media only screen and (min-width: 768px) {
-  .subscribe {
-    position: relative;
-    left: 100px; } }
-
 @media only screen and (min-width: 320px) and (max-width: 1023px) {
   #whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px; } }
 
-.z-1 {
-  z-index: 1; }
-
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   #navMobile {
     display: none; } }
 

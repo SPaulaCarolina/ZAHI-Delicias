@@ -15,7 +15,9 @@ $z-0: 0;
 $z-1: 1;
 $z-2: 2;
 
-
+body {
+	overflow-x:$hidden;
+}
 .iconsContainer {
 	text-align:$ri;
 }
@@ -38,15 +40,12 @@ $z-2: 2;
 		z-index:$z-0;
 	}
 }
-.carousel-title {
-	text-align:$cen;
-}
-.sectionLogo {
+.section-logo {
 	@media only screen and (min-width: 768px) {
 		position:$p-rel;
 	}
 }
-.sectionTitle,.sectionSubtitle,.parrafo {
+.carousel-title,.section-title,.section-subt,.article {
 	text-align:$cen;
 }
 .bg-image {
@@ -60,7 +59,22 @@ $z-2: 2;
 		background-position:$cen;
 		text-align:$cen;
 }
-.animText {
+.modal {
+ 	@media only screen and (min-width:320px) and (max-width:767px) {
+ 		position:$p-rel;
+ 		top:$m-100;
+ 	}
+ }
+.subscribe {
+ 	@media only screen and (min-width:768px) {
+ 		position:$p-rel;
+		left:$m-100;
+	}
+ }
+ .z-1 {
+ 	z-index:$z-1;
+ }
+ .animText {
 	position:$p-abs;
 	top:$cero;
 	left:$cero;
@@ -68,20 +82,11 @@ $z-2: 2;
 	right:$cero;
 	overflow:$hidden;
 }
-.subscribe {
- 	@media only screen and (min-width:768px) {
- 		position:$p-rel;
-		left:$m-100;
-	}
- }
- #whatsapp {
+#whatsapp {
 	@media only screen and (min-width:320px) and (max-width:1023px) {
 		position:$p-fix;
 		bottom:$m-20;
 		right:$m-20;
 	}
 }
-.z-1 {
- 	z-index:$z-1;
- }
- 
+

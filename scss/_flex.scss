@@ -24,13 +24,13 @@ body {
 		justify-content:$cen;
 	}
 }
-.title-container,.section {
+.title-container,.flex-section {
 	display:$d-flex;
 	flex-flow:$column-no-w;
 	justify-content: $cen;
 	align-items:$cen;
 }
-.acerca-de {
+.flex-container,.error {
 	display:$d-flex;
 	justify-content: $cen;
 	align-items:$cen;

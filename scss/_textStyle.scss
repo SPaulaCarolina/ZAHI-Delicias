@@ -70,13 +70,13 @@ html {
 .text {
 	font-size:$textXS;
 }
-.sectionTitle {
+.section-title {
 	font-size:$titleS;
 	}
-.sectionSubtitle {
+.section-subt {
 	font-size:$textXL;
 	}
-.parrafo {
+.article {
 	font-size:$textS;
 	}
 .contacto {
@@ -93,12 +93,25 @@ html {
 }
 .description {
 		font-size:$textS;
-	}
-.footer {
-	font-size:$textM;
+}
+.card-name {
+	text-decoration:$no;
+	font-size:$titleM;
+	font-family:$style2;
 }
 .publicidad {
 	font-weight:$bold;
+}
+.modal-caption {
+	font-family:$style2;
+	font-size:$textXS;
+}
+.error {
+	font-family:$style2;
+	font-size:$titleM;
+}
+.footer {
+	font-size:$textM;
 }
 .animText {
 	font-family:$style2;
@@ -109,14 +122,7 @@ html {
 		font-size:$textS;
 	}
 	@media only screen and (min-width: 768px) {
-		font-size:$textXL;
+		font-size:$textL;
 	}
 }
-.card-name {
-	text-decoration:$no;
-	font-size:$titleM;
-	font-family:$style2;
-}
-.modal-content {
-	font-family:$style2;
-}
+
