@@ -34,10 +34,10 @@ body {
 	display:$d-flex;
 	justify-content: $cen;
 	align-items:$cen;
-	@media only screen and (min-width:320px) and (max-width:767px) {
+	@media only screen and (min-width:320px) and (max-width:1023px) {
 		flex-flow:$column-no-w;
 	}
-	@media only screen and (min-width:768px) {
+	@media only screen and (min-width:1024px) {
 		flex-flow:$row-no-w;
 	}
 }
@@ -76,9 +76,6 @@ body {
 }
 .animText {
 	display:$d-flex;
-}
-.submit {
-	justify-content: $f-start;
 }
 .align-center {
 	align-items:$cen;

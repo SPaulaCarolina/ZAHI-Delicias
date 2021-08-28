@@ -14,6 +14,7 @@ $m-100: 100px;
 $z-0: 0;
 $z-1: 1;
 $z-2: 2;
+$z-3: 3;
 
 body {
 	overflow-x:$hidden;
@@ -34,10 +35,13 @@ body {
 	z-index:$z-1;
 }
 #carousel,#portada {
-	@media only screen and (min-width: 768px) {
-		position:$p-rel;
+	position:$p-rel;
+	z-index:$z-0;
+	@media only screen and (min-width:768px) and (max-width:1023px) {
+		bottom:$m-20;
+	}
+	@media only screen and (min-width: 1024px) {
 		bottom:$m-75;
-		z-index:$z-0;
 	}
 }
 .section-logo {
@@ -66,9 +70,15 @@ body {
  	}
  }
 .subscribe {
- 	@media only screen and (min-width:768px) {
+ 	@media only screen and (min-width:1024px) {
  		position:$p-rel;
 		left:$m-100;
+	}
+	p {
+		@media only screen and (min-width:320px) and (max-width:767px) {
+ 		position:$p-rel;
+		left:$m-20;
+	}
 	}
  }
  .z-1 {
@@ -87,6 +97,7 @@ body {
 		position:$p-fix;
 		bottom:$m-20;
 		right:$m-20;
+		z-index:$z-3;
 	}
 }
 

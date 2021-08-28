@@ -95,10 +95,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
-  @media only screen and (min-width: 320px) and (max-width: 767px) {
+  @media only screen and (min-width: 320px) and (max-width: 1023px) {
     .flex-container, .error {
       flex-flow: column nowrap; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .flex-container, .error {
       flex-flow: row nowrap; } }
 
@@ -136,9 +136,6 @@ body {
 
 .animText {
   display: flex; }
-
-.submit {
-  justify-content: flex-start; }
 
 .align-center {
   align-items: center; }
@@ -204,6 +201,9 @@ body {
   .info p {
     padding: 5px; }
 
+.submit {
+  margin-right: 20px; }
+
 .m-left {
   margin-left: 10px; }
 
@@ -252,7 +252,12 @@ body {
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   #mapa {
-    margin-left: 75px; } }
+    margin-left: 20px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+  #whatsapp {
+    margin-bottom: 20px;
+    margin-right: 20px; } }
 
 html {
   font-size: 62, 5%;
@@ -269,7 +274,10 @@ html {
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     .title-view {
       font-size: 1.2rem; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .title-view {
+      font-size: 3rem; } }
+  @media only screen and (min-width: 1024px) {
     .title-view {
       font-size: 8rem; } }
 
@@ -280,7 +288,11 @@ html {
   .titleA {
     font-size: 1.2rem; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .titleA {
+    font-size: 1.8rem; } }
+
+@media only screen and (min-width: 1024px) {
   .titleA {
     font-size: 3rem; } }
 
@@ -288,7 +300,11 @@ html {
   .titleB {
     font-size: 1rem; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .titleB {
+    font-size: 1.2rem; } }
+
+@media only screen and (min-width: 1024px) {
   .titleB {
     font-size: 1.8rem; } }
 
@@ -338,15 +354,22 @@ html {
   font-weight: bold; }
 
 .modal-caption {
-  font-family: "Handlee", cursive;
-  font-size: 0.8rem; }
+  font-family: "Handlee", cursive; }
+  @media only screen and (min-width: 320px) and (max-width: 1023px) {
+    .modal-caption h3 {
+      font-size: 1rem; } }
 
 .error {
   font-family: "Handlee", cursive;
   font-size: 2rem; }
 
-.footer {
-  font-size: 1.2rem; }
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+  .footer {
+    font-size: 0.8rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    font-size: 1.2rem; } }
 
 .animText {
   font-family: "Handlee", cursive; }
@@ -377,11 +400,15 @@ body {
 #navDesktop {
   z-index: 1; }
 
-@media only screen and (min-width: 768px) {
-  #carousel, #portada {
-    position: relative;
-    bottom: 75px;
-    z-index: 0; } }
+#carousel, #portada {
+  position: relative;
+  z-index: 0; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #carousel, #portada {
+      bottom: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    #carousel, #portada {
+      bottom: 75px; } }
 
 @media only screen and (min-width: 768px) {
   .section-logo {
@@ -406,10 +433,15 @@ body {
     position: relative;
     top: 100px; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .subscribe {
     position: relative;
     left: 100px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .subscribe p {
+    position: relative;
+    left: 20px; } }
 
 .z-1 {
   z-index: 1; }
@@ -426,7 +458,8 @@ body {
   #whatsapp {
     position: fixed;
     bottom: 20px;
-    right: 20px; } }
+    right: 20px;
+    z-index: 3; } }
 
 @media only screen and (min-width: 768px) {
   #navMobile {

@@ -29,7 +29,10 @@ html {
 	@media only screen and (min-width: 320px) and (max-width: 767px) {
 		font-size:$textM;
 	}
-	@media only screen and (min-width: 768px) {
+	@media only screen and (min-width: 768px) and (max-width: 1023px) {
+			font-size:$titleL;
+	}
+	@media only screen and (min-width: 1024px) {
 		font-size:$titleXL;
 	}
 }
@@ -40,7 +43,10 @@ html {
 	@media only screen and (min-width: 320px) and (max-width: 767px) {
 		font-size:$textM;
 	}
-	@media only screen and (min-width: 768px) {
+	@media only screen and (min-width: 768px) and (max-width: 1023px) {
+		font-size:$titleS;
+	}
+	@media only screen and (min-width: 1024px) {
 		font-size:$titleL;
 	}
 }
@@ -48,7 +54,10 @@ html {
 	@media only screen and (min-width: 320px) and (max-width: 767px) {
 		font-size:$textS;
 	}
-	@media only screen and (min-width: 768px) {
+	@media only screen and (min-width: 768px) and (max-width: 1023px) {
+		font-size:$textM;
+	}
+	@media only screen and (min-width: 1024px) {
 		font-size:$titleS;
 	}
 }
@@ -104,14 +113,23 @@ html {
 }
 .modal-caption {
 	font-family:$style2;
-	font-size:$textXS;
+	h3 {
+		@media only screen and (min-width: 320px) and (max-width: 1023px) {
+			font-size:$textS;
+		}
+	}
 }
 .error {
 	font-family:$style2;
 	font-size:$titleM;
 }
 .footer {
-	font-size:$textM;
+	@media only screen and (min-width: 320px) and (max-width: 1023px) {
+		font-size:$textXS;
+	}
+	@media only screen and (min-width: 1024px) {
+		font-size:$textM;
+	}
 }
 .animText {
 	font-family:$style2;
